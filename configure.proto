@@ -1,0 +1,11 @@
+service PerphAgent {
+    rpc Configure (NewVersion) returns (AcceptedVersion);
+  }
+  
+  message NewVersion {
+    string versionID = 1;
+  }
+  
+  message AcceptedVersion {
+    string versionID = 1;
+  }
